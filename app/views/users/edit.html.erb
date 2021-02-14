@@ -1,0 +1,33 @@
+<%= form_for @user do |u| %>
+    <div>
+        <%= u.label :name %>
+        <%= u.text_field :name %>
+    </div>
+        
+    <div>
+        <%= u.label :biography %>
+        <%= u.text_area :biography %>
+    </div>
+
+    <div>
+        <%= u.label :Facebook %>
+        <%= u.text_field :Facebook %>
+    </div>
+
+    <div>
+        <%= u.label :Twitter %>
+        <%= u.text_field :Twitter %>
+    </div>
+
+    <div>
+        <%= u.label :Instagram %>
+        <%= u.text_field :Instagram %>
+    </div>
+
+    <div>
+        <%= u.label :GitHub %>
+        <%= u.text_field :GitHub %>
+    </div>
+        <%= u.submit %>
+    </div>
+<% end %>

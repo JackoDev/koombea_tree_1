@@ -16,14 +16,14 @@
     <tr>
         <td><%= user.name %></td>
         <td><%= user.biography %></td>
-        <td><%= user.Facebook %></td>
-        <td><%= user.Twitter %></td>
-        <td><%= user.Instagram %></td>
-        <td><%= user.GitHub %></td>
+        <td><%= link_to user.Facebook %></td>
+        <td><%= link_to user.Twitter %></td>
+        <td><%= link_to user.Instagram %></td>
+        <td><%= link_to user.GitHub %></td>
         <td>
             <%= link_to "View" %>
-            <%= link_to "Update" %>
-            <%= link_to "Delete" %>
+            <%= link_to "Update", edit_user_path(user) %>
+            <%= link_to "Delete", user, method: :delete, data: { confirm: "Do you want delete this user?"} %>
         </td>
     </tr>
         <% end %>
