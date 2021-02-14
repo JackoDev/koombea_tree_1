@@ -1,0 +1,30 @@
+<h1>Welcome to Koombea Link Tree App!!</h1>
+<h2> Registered Users </h2>
+<table>
+    <tr>
+        
+        <thead>
+            <th>Name</th>
+            <th>Biography</th>
+            <th>Facebook</th>
+            <th>Twitter</th>
+            <th>Instagram</th>
+            <th>GitHub</th>
+        </thead>
+    </tr>
+        <% @users.each do |user| %>
+    <tr>
+        <td><%= user.name %></td>
+        <td><%= user.biography %></td>
+        <td><%= user.Facebook %></td>
+        <td><%= user.Twitter %></td>
+        <td><%= user.Instagram %></td>
+        <td><%= user.GitHub %></td>
+        <td>
+            <%= link_to "View" %>
+            <%= link_to "Update" %>
+            <%= link_to "Delete" %>
+        </td>
+    </tr>
+        <% end %>
+</table>
