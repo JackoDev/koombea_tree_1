@@ -1,6 +1,11 @@
+<%-# commented line -%>
+<%-# Archivo que define la vista PRINCIPAL (INDEX) al menos por ahora de la aplicación -%>
+<br>
+<br>
 <h1>Welcome to Koombea Link Tree App!!</h1>
 <br>
 
+<%-# Link para crear usuarios -%>
 <%= link_to "Add User", users_new_path %>
 
 <br>
@@ -8,7 +13,6 @@
 <h2> Registered Users </h2>
 <table>
     <tr>
-        
         <thead>
             <th>Name</th>
             <th>Biography</th>
@@ -27,7 +31,7 @@
         <td><%= link_to user.Instagram %></td>
         <td><%= link_to user.GitHub %></td>
         <td>
-            <%= link_to "View" %>
+            <%= link_to "View", user_path(user) %>
             <%= link_to "Update", edit_user_path(user) %>
             <%= link_to "Delete", user, method: :delete, data: { confirm: "Do you want delete this user?"} %>
         </td>

@@ -1,0 +1,64 @@
+<%-# commented line -%>
+<%-# Archivo que define la vista que vamos a tener para la opción VIEW -%>
+<br>
+<br>
+<table>
+    <tr>
+        <thead>
+            <th>Name</th>
+        </thead>
+    </tr>
+    <tr>
+        <td><%= @user.name %></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <thead>
+            <th>Biography</th>
+        </thead>
+    </tr>
+    <tr>
+        <td><%= @user.biography %></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <thead>
+            <th>Facebook</th>
+        </thead>
+    </tr>
+    <tr>
+        <td><%= link_to @user.Facebook %></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <thead>
+            <th>Twitter</th>
+        </thead>
+    </tr>
+    <tr>
+        <td><%= link_to @user.Twitter %></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <thead>
+            <th>Instagram</th>
+        </thead>
+    </tr>
+    <tr>
+        <td><%= link_to @user.Instagram %></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <thead>
+            <th>GitHub</th>
+        </thead>
+    </tr>
+    <tr>
+        <td><%= link_to @user.GitHub %></td>
+    </tr>
+</table>

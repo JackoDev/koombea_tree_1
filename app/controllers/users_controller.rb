@@ -35,6 +35,15 @@ class UsersController < ApplicationController
         redirect_to users_path
     end
 
+    def view
+        @user = User.find(params[:id])
+    end
+
+    def show
+        @user = User.find(params[:id])
+        render :view
+    end
+
     private
     def user_params
         params.require(:user).permit(:name, :biography, :Facebook, :Twitter, :Instagram, :GitHub)
